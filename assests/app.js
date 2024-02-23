@@ -24,18 +24,22 @@ function closeMenu(){
 /* <script> */
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwDT77y5_X9oWCw6uloAnQ80dJn7asL1cdGBA2yf4CJqiM28Qh3P3oJvVLWNV8Dk7mQ/exec'
   const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById['msg']
+  const msg = document.getElementById('msg');
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Thank You details submitted.";
+        msg.innerHTML = "Thank You. The details have been submitted.";
         setTimeout(function(){
             msg.innerHTML = "";
-        }, 5000)
+        }, 4000)
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
   })
 // </script>
+
+if(window.location.pathname === '/about.html'){
+    document.body.style.overflow = 'hidden';
+}

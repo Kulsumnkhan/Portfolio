@@ -88,7 +88,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 48%;   
+    flex-basis: 40%;   
 }
 
 .about-image{
@@ -97,7 +97,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 50%;
+    flex-basis: 55%;
 }
 
 .sub-title{
@@ -136,12 +136,14 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 6px 0;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .tab-contents{
@@ -312,7 +314,7 @@ form .btn-2{
     cursor: pointer;
 }
 
-.copyright{
+footer{
     width: 100%;
     text-align: center;
     padding: 15px 0;
@@ -402,7 +404,7 @@ nav .fas{
         flex-basis: 100%;
     }
 
-    .copyright{
+    footer{
         font-size: 12px;
     }
 
@@ -412,6 +414,10 @@ nav .fas{
 
     #portfolio{
         padding: 10px 3% 25px;
+    }
+
+    #contacts{
+        padding: 10px 3% 30%;
     }
 
     .project:hover img{
