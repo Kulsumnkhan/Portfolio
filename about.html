@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21b76c8c47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assests/style.css">
+    <title>Kulsum's Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="about">
+            <nav>
+                <img src="./assests/images/logo.png" alt="Logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis fas" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assests/images/IMG_20221026_193221_Bokeh.jpg" alt="Myself." class="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a Frontend Developer with 2 years of hands-on experience, I have honed my skills in designing
+                        and developing user-centric, responsive web applications. Specializing in modern technologies
+                        such as HTML5, CSS3, JavaScript, and framework like Angular, I have successfully delivered
+                        projects that prioritize performance, accessibility, and seamless user experiences. My journey
+                        has been marked by a continuous learning ethic, adaptability to dynamic tech environments, and a
+                        collaborative spirit, working effectively within team settings to meet and exceed project goals.
+                        My passion for frontend development is driven by the joy of turning complex problems into
+                        simple, elegant solutions, and I am eager to bring my expertise and enthusiasm to a team that
+                        values innovation, quality, and user satisfaction.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="openTab('skills')"><strong>Skills</strong></p>
+                        <p class="tab-links" onclick="openTab('experience')"><strong>Experience</strong></p>
+                        <p class="tab-links" onclick="openTab('education')"><strong>Education</strong></p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><i>Web Development Skills</i></span><br></li>
+                            <li>HTML/HTML5<br></li>
+                            <li>CSS/CSS3<br></li>
+
+                            <li><span><i>Layout Design</i></span><br></li>
+                            <li>Bootstrap 4/5<br></li>
+                            <li>SASS<br></li>
+                            <li>Flex<br></li>
+
+                            <li><span><i>Languages</i></span><br></li>
+                            <li>JavaScrip<br></li>
+                            <li>TypeScript<br></li>
+
+                            <li><span><i>Frameworks</i></span><br></li>
+                            <li>Angular<br></li>
+
+                            <li><span><i>Source Code Management Tool</i></span><br></li>
+                            <li>Git<br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Globeminds Technologies, Pune.</span></li>
+                            <li>Dec 2021 – Present<br>Frontend Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><i>M.Sc.(Zoology) </i></span>2022</li>
+                            <li><span><i>M.Ed. </i></span>2015</li>
+                            <li><span><i>B.Ed. </i></span>2014</li>
+                            <li><span><i>B.Sc.(Microbiology) </i></span>2013</li>
+                            <li><span><i>HSC (Science) </i></span>2010</li>
+                            <li><span><i>SSC </i></span>2008</li>
+
+                            <hr>
+
+                            <li><span><i>Certificates -</i></span><br></li>
+                            <li>Lean Six Sigma Black Belt from XLNC Academy<br></li>
+                            <li>MS-CIT 71%<br></li>
+                            <li>DOEACC Course on Computer Concepts (CCC) Grade “C” (55%-64%)<br></li>
+                            <li>NIELIT Diploma in Computer Applications, Business Accounting and Multilingual D.T.P.
+                                Grade “B” (60%-75%).<br></li>
+                            <li>Voice & Accent from ELTIS.<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Kulsum. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="./assests/app.js"></script>
+</body>
+
+</html>

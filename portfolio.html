@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21b76c8c47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assests/style.css">
+    <title>Kulsum's Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="portfolio">
+            <nav>
+                <img src="./assests/images/logo.png" alt="Logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis fas" onclick="openMenu()"></i>
+            </nav>
+
+            <!-- <div id="wrap"> -->
+                <h1 class="sub-title">Projects</h1>
+                <div class="projects-list">
+                    <div class="project">
+                        <img src="./assests/images/employee-leave-management-system.jpg" alt="Leave Mangement.">
+                        <div class="layer">
+                            <h3>Leave Mangement System</h3>
+                            <p>A School Leave Management System for staff, built on Angular, enables online leave
+                                requests, reviewed by HMS and the Principal, with Firebase authentication ensuring
+                                secure access.</p><br>
+                            <a href="https://angular-task-5-peach.vercel.app/" target="_blank"><i
+                                    class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="./assests/images/ecommerce.jpg" alt="E-Commerce.">
+                        <div class="layer">
+                            <h3>E - Commerce.</h3>
+                            <p>The Angular-based eCommerce project provides users with a seamless shopping experience,
+                                enabling the addition of desired products to the cart for easy purchase.</p><br>
+                            <a href="https://angular-task-1-ivory.vercel.app/" target="_blank"><i
+                                    class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Kulsumnkhan?tab=repositories" target="_blank" class="btn">See More</a>
+            <!-- </div> -->
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Kulsum. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="./assests/app.js"></script>
+</body>
+
+</html>

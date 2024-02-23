@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21b76c8c47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assests/style.css">
+    <title>Kulsum's Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="contacts">
+            <nav>
+                <img src="./assests/images/logo.png" alt="Logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis fas" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <a href="mailTo:kulsum.khan.963@gmail.com"><i
+                            class="fa-solid fa-paper-plane"></i>kulsum.khan.963@gmail.com</a>
+                    <a href="tel:9766956786"><i class="fa-solid fa-square-phone"></i>+91 9766956786</a>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kulsum-khan-9ab66322b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByevyYsvFQhSy0UjmA4rQiA%3D%3D"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/kulsumnkhan.angel" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/kulsum_n_khan/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/KhanKulsumNazim" target="_blank"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+
+                    <a href="./assests/images/KULSUM CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" placeholder="Kindly enter your full name." required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Kindly enter your email." required>
+
+                        <label for="phone">Contact</label>
+                        <input type="tel" name="phone" placeholder="Kindly enter your contact details." required>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="6" placeholder="Kindly enter your message."></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Kulsum. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="./assests/app.js"></script>
+</body>
+
+</html>
