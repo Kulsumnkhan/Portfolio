@@ -326,6 +326,12 @@ nav .fas{
     display: none;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+}
+
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(./images/Potrait.-removebg-preview.png);

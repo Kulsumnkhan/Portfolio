@@ -21,14 +21,21 @@ function closeMenu(){
     sideMenu.style.right = '-200px';
 }
 
-{/* <script> */}
+/* <script> */
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwDT77y5_X9oWCw6uloAnQ80dJn7asL1cdGBA2yf4CJqiM28Qh3P3oJvVLWNV8Dk7mQ/exec'
   const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById['msg']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        msg.innerHTML = "Thank You details submitted.";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        }, 5000)
+        form.reset();
+      })
       .catch(error => console.error('Error!', error.message))
   })
 // </script>
